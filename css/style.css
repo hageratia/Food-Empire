@@ -1,0 +1,626 @@
+:root {
+    --main-color: #DEC700;
+
+}
+
+* {
+    margin: 0;
+}
+
+.nav {
+    background-color: #111010;
+    color: white;
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.5);
+
+}
+
+.nav .logo p {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.nav .logo p span {
+    font-family: "Sacramento", cursive;
+    font-weight: 400;
+}
+
+.nav .container {
+    display: flex;
+    padding: 10px 25px 15px;
+    justify-content: space-between;
+}
+
+.nav-link ul {
+    list-style: none;
+    display: flex;
+
+}
+
+.nav-link ul li {
+    padding-right: 30px;
+    align-items: center;
+
+}
+
+.nav-link ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.home-content {
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+
+}
+
+.home-content .container {
+    display: flex;
+    padding: 5px 30px;
+    justify-content: center;
+
+
+}
+
+.home-content .sec1 {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: "Roboto";
+    width: 25.3333%;
+    padding-top: 70px;
+}
+
+.home-content .sec1 h4 {
+    padding-bottom: 10px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+.home-content .sec1 h4 span {
+    color: white;
+}
+
+.home-content .sec1 p {
+    font-weight: 100;
+    width: 90%;
+}
+
+.home-content .sec2 {
+    width: 33.3333%;
+}
+
+.home-content .sec2 img {
+    max-width: 100%;
+    height: auto;
+}
+
+.home-content .sec3 {
+    padding-top: 150px;
+    font-family: "Roboto";
+    width: 33.3333%;
+}
+
+.home-content .sec3 sub {
+    font-family: "Sacramento", cursive;
+    font-weight: 400;
+    color: var(--main-color);
+    font-size: 16px;
+}
+
+.home-content .sec3 p {
+    padding-top: 10px;
+    font-weight: 100;
+    /* width: 70%; */
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.social {
+    background-color: var(--main-color);
+    position: fixed;
+    top: 30%;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 25px 10px 15px;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+    justify-content: center;
+}
+
+.social i {
+    padding-bottom: 10px;
+}
+
+
+.carousel {
+    display: flex;
+    overflow-x: auto;
+}
+
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.item {
+    display: flex;
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+    scroll-snap-align: start;
+    position: relative;
+}
+
+.item img {
+    width: 40%;
+    height: auto;
+}
+
+.info-flex {
+    padding: 15px;
+    text-align: left;
+    display: flex;
+}
+
+.info-cap {
+    font-family: "Roboto", sans-serif;
+    width: 70%;
+}
+
+.info-cap h2 {
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+.info-cap p {
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.7);
+    padding-bottom: 10px;
+
+}
+
+.price {
+    align-items: center;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.new-price {
+    /* color: #ffd700; */
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+.old-price {
+    color: #888;
+    text-decoration: line-through;
+    font-size: 1em;
+}
+
+.buy-button {
+    background-color: #ffd700;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.buy-button:hover {
+    background-color: #ffcc00;
+}
+
+.item:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+.pagination-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 5px;
+    background-color: #888;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active,
+.dot:hover {
+    background-color: white;
+}
+
+.fruit-fav,
+.fruit-shop {
+    background-color: #000;
+    padding-top: 25px;
+}
+
+.fruit-shop form input {
+    width: 100%;
+    /* color: white; */
+    background: #111;
+    color: #fff;
+    outline: none;
+    padding: 10px;
+    margin: 5px 0 20px 0;
+    border: none;
+    border-radius: 5px;
+    box-sizing: border-box;
+
+}
+
+.fruit-shop form button {
+    border: none;
+    width: 50%;
+    height: 30px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 20px;
+    background-color: #DEC700;
+}
+
+.fruit-shop #catalog {
+    margin-top: 15px;
+}
+
+.caption {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    border-bottom: 1px solid rgba(23, 23, 25, 1);
+    ;
+    margin-bottom: 15px;
+}
+
+.caption p {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.caption p i {
+    padding-left: 5px;
+}
+
+.fruit-fav .container,
+.fruit-shop .container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.fruit-fav h2,
+.fruit-shop h2 {
+    text-align: left;
+    margin-bottom: 20px;
+
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #333;
+    width: 23%;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-family: "Roboto", sans-serif;
+}
+
+.fruit-fav .card .card-img img,
+.fruit-shop .card .card-img img {
+    width: 100%;
+}
+
+.fruit-fav .card-info,
+.fruit-shop .card-info {
+    padding: 10px;
+}
+
+.fruit-fav .card-info h3,
+.fruit-shop .card-info h3 {
+    font-size: 16px;
+    margin: 10px 0 5px;
+    color: white;
+    font-weight: 400;
+}
+
+.card-info p {
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 12px;
+}
+
+.fruit-fav .price p,
+.fruit-shop .price p {
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+    /* margin-left: -5px; */
+}
+
+.fruit-fav .old-price,
+.fruit-shop .old-price {
+    text-decoration: line-through;
+    color: #aaa;
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.fruit-fav .flex-que,
+.fruit-shop .flex-que {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.fruit-fav .quantity,
+.fruit-shop .quantity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid white;
+    padding: 10px 20px;
+}
+
+.fruit-fav .quantity button,
+.fruit-shop .quantity button {
+    background-color: inherit;
+    border: none;
+    color: white;
+    /* padding: 10px; */
+    cursor: pointer;
+}
+
+.fruit-fav .quantity span,
+.fruit-shop .quantity span {
+    margin: 0 7px;
+    font-size: 16px;
+    color: white;
+}
+
+.price-del-upd {
+    display: flex;
+    justify-content: space-between;
+}
+
+.del-upd i {
+    padding-right: 5px;
+    margin-top: 5px;
+}
+
+.del-upd #update {
+    color: #DEC700;
+}
+
+.del-upd #delete {
+    color: red;
+}
+
+.buy-now {
+    background-color: #ffcc00;
+    border: none;
+    padding: 14px 24px;
+    cursor: pointer;
+    font-size: 12px;
+    color: white;
+    font-weight: 400;
+}
+
+.buy-now:hover {
+    background-color: #e6b800;
+}
+
+
+.about-us {
+    padding: 50px;
+    text-align: center;
+    background: rgba(9, 10, 16, 1);
+    font-family: "Roboto", sans-serif;
+}
+
+
+.testimonials {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.testimonial-card {
+    background-color: #1c1c1c;
+    /* border-radius: 10px; */
+    padding: 20px;
+    width: 280x;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: left;
+}
+
+.testimonial-card .card-img {
+    display: flex;
+}
+
+.card-secions {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.card-secions h3 {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.card-secions .card-sec1 p {
+    font-weight: 100;
+}
+
+.card-secions .card-sec2 {
+    width: 50%;
+}
+
+.card-secions .card-sec2 p {
+    width: 77px;
+    height: 75px;
+    font-weight: 900;
+    font-size: 64px !important;
+    color: rgba(255, 255, 255, 0.8);
+
+}
+
+.quantity input {
+    width: 10px;
+    text-align: center;
+    margin: 0 10px;
+    background: none;
+    border: none;
+    color: #fff;
+}
+
+
+.testimonial-card img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+.testimonial-card h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.testimonial-card p {
+    margin: 5px 0;
+    color: #bbbbbb;
+}
+
+
+
+.footer {
+    background-color: #000000;
+    padding: 40px 0;
+    color: #ffffff;
+}
+
+/* .footer-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+} */
+
+.subscribe {
+    display: flex;
+    /* min-width: 300px; */
+    justify-content: space-between !important;
+}
+
+.subscribe h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #bbbbbb;
+}
+
+.subscribe-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.subscribe-form input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.subscribe-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #bbbbbb;
+    color: #000000;
+    cursor: pointer;
+}
+
+.social-media {
+    flex: 1;
+    min-width: 150px;
+    text-align: center;
+}
+
+.social-media h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #bbbbbb;
+}
+
+.social-media a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-media img {
+    width: 24px;
+    height: 24px;
+}
+
+.footer-nav {
+    flex: 2;
+    min-width: 300px;
+    text-align: center;
+}
+
+.footer-nav .logo h2 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.footer-nav .logo span {
+    font-family: 'Cursive', sans-serif;
+    font-weight: normal;
+    color: #bbbbbb;
+}
+
+.footer-nav nav {
+    margin: 20px 0;
+}
+
+.footer-nav nav a {
+    margin: 0 15px;
+    color: #bbbbbb;
+    text-decoration: none;
+}
+
+.footer-nav nav a:hover {
+    text-decoration: underline;
+}
+
+.footer-nav p {
+    color: #666666;
+}
